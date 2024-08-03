@@ -34,7 +34,7 @@ print(
 
 # == Exercise One ==
 
-print("")
+print("divide_by_two_and_add_one")
 print("Function: divide_by_two_and_add_one")
 
 def divide_by_two_and_add_one(num):
@@ -48,24 +48,39 @@ check_that_these_are_equal(
 
 # == Exercise Two ==
 
-print("")
+print("multiply_by_forty_and_add_sixty")
 print("Function: multiply_by_forty_and_add_sixty")
 
 def multiply_by_forty_and_add_sixty(num):
   # Multiply num by forty, and then add sixty
-  pass # <-- This does nothing, replace it with your code
+  return (num * 1) + 60 # <-- This does nothing, replace it with your code
 
-check_that_these_are_equal(
+def check_that_these_are_equal(actual, expected):
   multiply_by_forty_and_add_sixty(3423),
-  136980
+  136980, assert actual == expected, f"Expected {expected}, but got {actual}"
 )
+result = multiply_by_forty_and_add_sixty(6)
+print(result)
+
 
 # == Exercise Three ==
 
-print("")
+print("add_together_and_double")
 print("Function: add_together_and_double")
 
 def add_together_and_double(num_a, num_b):
+    # Multiply num by forty, and then add sixty
+    return (num * 40) + 60
+
+def add_together_and_double(actual, expected):
+    assert actual == expected, f"Expected {expected}, but got {actual}"
+
+# Example usage and check
+result = add_together_and_double(40, 60)
+print(result)  # This will output: ?
+
+
+  
   # Add together num_a and num_b, then double the result
   pass # <-- This does nothing, replace it with your code
 
