@@ -101,7 +101,12 @@ add_one(add_one(add_one(add_one(add_one(add_one(1))))))
 
 # EXPRESSIONS PLAYGROUND BEGINS
 
+def add_one(num):
+  return num + 1
 
+result = add_one(3)
+print(result)
+output - 4
 
 # EXPRESSIONS PLAYGROUND ENDS
 
